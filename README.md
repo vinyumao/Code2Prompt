@@ -15,19 +15,6 @@
 
 ## 复制结果
 
-````md
-[HeaderModel.kt](/Users/wayne/work/android-recopos/tool/src/main/java/com/shulin/tool/network/HeaderModel.kt)  行号: 129 位置: HeaderModel#getLanguage 关键代码:
-```kt
-fun getLanguage(key: String): String = languageMmkv.getString(key, LanguageUtil.getLanguage()) ?: ""
-```
-
-要做什么:
-````
-
-多行选区会输出行号范围，例如 `129-135`。
-
-### 实际输出
-
 ![复制后的代码上下文](screenshots/Shot_2026-08-28_17.34.21.png)
 
 ## 本地安装
