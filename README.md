@@ -26,6 +26,10 @@ fun getLanguage(key: String): String = languageMmkv.getString(key, LanguageUtil.
 
 多行选区会输出行号范围，例如 `129-135`。
 
+### 实际输出
+
+![复制后的代码上下文](screenshots/Shot_2026-08-28_17.34.21.png)
+
 ## 本地安装
 
 1. 执行 `./gradlew buildPlugin`。
