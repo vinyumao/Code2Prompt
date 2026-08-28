@@ -1,0 +1,20 @@
+<idea-plugin>
+    <id>com.wayen.code2prompt</id>
+    <name>Code2Prompt</name>
+    <vendor>Wayne</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.java</depends>
+
+    <actions>
+        <action
+                id="com.wayen.code2prompt.CopySelectionWithContext"
+                class="com.wayen.code2prompt.CopySelectionWithContextAction"
+                text="Copy Selection with Context"
+                icon="AllIcons.Actions.Copy"
+                description="Copy selected code with file, line, and symbol context">
+            <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="$Copy"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt meta C"/>
+        </action>
+    </actions>
+</idea-plugin>
