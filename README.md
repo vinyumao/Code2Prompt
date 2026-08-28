@@ -17,11 +17,11 @@
 
 ![复制后的代码上下文](screenshots/Shot_2026-08-28_17.34.21.png)
 
-## 本地安装
+## 安装
 
-1. 执行 `./gradlew buildPlugin`。
+1. 前往 [GitHub Release 页面](https://github.com/vinyumao/Code2Prompt/releases/latest)，下载最新的 `*-signed.zip` 安装包。
 2. 在 Android Studio 打开 **Settings → Plugins → ⚙ → Install Plugin from Disk…**。
-3. 选择 `build/distributions/` 下生成的 ZIP 文件，并重启 IDE。
+3. 选择下载的 ZIP 文件，并重启 IDE。
 
 ## 本地开发
 
