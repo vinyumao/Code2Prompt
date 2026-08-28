@@ -5,3 +5,4 @@ build/
 out/
 *.iml
 .DS_Store
+release-secrets/

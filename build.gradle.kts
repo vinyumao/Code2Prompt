@@ -29,7 +29,7 @@ kotlin {
 intellijPlatform {
     pluginConfiguration {
         id = "com.wayen.code2prompt"
-        name = "Code2Prompt"
+        name = "Code2Prompt: Copy Code Context"
         version = providers.gradleProperty("pluginVersion")
 
         description = "Copies the selected code together with its file, line numbers, and symbol context."
@@ -43,10 +43,21 @@ intellijPlatform {
             name = "Wayne"
         }
     }
+
+    // 签名材料保留在已忽略的本地目录；密码仅从环境变量读取。
+    signing {
+        certificateChainFile = layout.projectDirectory.file("release-secrets/chain.crt")
+        privateKeyFile = layout.projectDirectory.file("release-secrets/private.pem")
+        password = providers.environmentVariable("PRIVATE_KEY_PASSWORD")
+    }
 }
 
 tasks {
     test {
         useJUnitPlatform()
+    }
+
+    named("verifyPluginSignature") {
+        dependsOn(named("signPlugin"))
     }
 }
