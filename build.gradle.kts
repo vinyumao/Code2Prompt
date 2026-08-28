@@ -33,10 +33,10 @@ intellijPlatform {
         version = providers.gradleProperty("pluginVersion")
 
         description = "Copies the selected code together with its file, line numbers, and symbol context."
-        changeNotes = "<ul><li>Initial local development build.</li></ul>"
+        changeNotes = "<ul><li>支持 Android Studio AI-253 及更高版本。</li></ul>"
 
         ideaVersion {
-            sinceBuild = "261"
+            sinceBuild = "253"
         }
 
         vendor {
