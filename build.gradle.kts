@@ -33,7 +33,7 @@ intellijPlatform {
         version = providers.gradleProperty("pluginVersion")
 
         description = "Copies the selected code together with its file, line numbers, and symbol context."
-        changeNotes = "<ul><li>优化复制入口位置，并使用专用图标与其他复制操作区分。</li></ul>"
+        changeNotes = "<ul><li>修复升级后的重复复制入口，并恢复系统 Copy 图标。</li></ul>"
 
         ideaVersion {
             sinceBuild = "253"

@@ -8,10 +8,10 @@
 
     <actions>
         <action
-                id="com.wayen.code2prompt.CopySelectionWithContext"
+                id="com.wayen.code2prompt.CopySelectionWithContextV2"
                 class="com.wayen.code2prompt.CopySelectionWithContextAction"
                 text="Copy Selection with Context"
-                icon="/icons/code2prompt.svg"
+                icon="AllIcons.Actions.Copy"
                 description="Copy selected code with file, line, and symbol context">
             <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="$Copy"/>
             <add-to-group group-id="Floating.CodeToolbar" anchor="after" relative-to-action="CommentByLineComment"/>
