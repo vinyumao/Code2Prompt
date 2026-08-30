@@ -11,10 +11,10 @@
                 id="com.wayen.code2prompt.CopySelectionWithContext"
                 class="com.wayen.code2prompt.CopySelectionWithContextAction"
                 text="Copy Selection with Context"
-                icon="AllIcons.Actions.Copy"
+                icon="/icons/code2prompt.svg"
                 description="Copy selected code with file, line, and symbol context">
-            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
-            <add-to-group group-id="Floating.CodeToolbar" anchor="last"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="$Copy"/>
+            <add-to-group group-id="Floating.CodeToolbar" anchor="after" relative-to-action="CommentByLineComment"/>
             <keyboard-shortcut keymap="$default" first-keystroke="alt meta C"/>
         </action>
     </actions>
