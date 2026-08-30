@@ -16,7 +16,7 @@ class CopySelectionWithContextAction : AnAction() {
 
     override fun update(event: AnActionEvent) {
         val editor = event.getData(CommonDataKeys.EDITOR)
-        event.presentation.isEnabledAndVisible =
+        event.presentation.isEnabled =
             editor?.selectionModel?.hasSelection() == true &&
                 editor.document.let { FileDocumentManager.getInstance().getFile(it) != null }
     }
