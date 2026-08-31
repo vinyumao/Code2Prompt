@@ -19,6 +19,10 @@
 
 ## 安装
 
+推荐直接通过 [JetBrains Marketplace 安装 Code2Prompt](https://plugins.jetbrains.com/plugin/33914-code2prompt-copy-code-context?noRedirect=true)。
+
+也可以使用 GitHub 安装包：
+
 1. 前往 [GitHub Release 页面](https://github.com/vinyumao/Code2Prompt/releases/latest)，下载最新的 `*-signed.zip` 安装包。
 2. 在 Android Studio 打开 **Settings → Plugins → ⚙ → Install Plugin from Disk…**。
 3. 选择下载的 ZIP 文件，并重启 IDE。
