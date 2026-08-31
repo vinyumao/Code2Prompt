@@ -6,6 +6,10 @@
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.java</depends>
 
+    <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup id="Code2Prompt" displayType="BALLOON" isLogByDefault="false"/>
+    </extensions>
+
     <actions>
         <action
                 id="com.wayen.code2prompt.CopySelectionWithContextV2"
