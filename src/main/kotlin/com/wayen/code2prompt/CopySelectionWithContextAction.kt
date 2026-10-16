@@ -17,7 +17,6 @@ import com.intellij.psi.PsiMethod
 import com.intellij.psi.PsiNamedElement
 import com.intellij.psi.PsiManager
 import com.intellij.util.Alarm
-import java.awt.datatransfer.StringSelection
 
 class CopySelectionWithContextAction : AnAction() {
 
@@ -64,7 +63,7 @@ class CopySelectionWithContextAction : AnAction() {
         )
 
         try {
-            CopyPasteManager.getInstance().setContents(StringSelection(CodeContextTemplateFormatter.format(context)))
+            CopyPasteManager.getInstance().setContents(CodeContextTransferable(context))
             showCopySuccess(event.presentation, context)
             notifyCopySuccess(project, context)
         } catch (exception: Exception) {

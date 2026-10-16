@@ -23,9 +23,7 @@ class CodeContextTemplateFormatterTest {
             ```kt
             fun getLanguage(key: String):String= languageMmkv.getString(key,LanguageUtil.getLanguage())?:""
             ```
-
-            要做什么:
-            """.trimIndent(),
+            """.trimIndent() + "\n\n",
             CodeContextTemplateFormatter.format(context),
         )
     }

@@ -40,7 +40,7 @@ intellijPlatform {
         version = providers.gradleProperty("pluginVersion")
 
         description = "Copies the selected code together with its file, line numbers, and symbol context."
-        changeNotes = "<ul><li>复制后在浮动工具栏显示成功对勾，并提供复制成功或失败提示。</li><li>使用 Java 21 编译，修复 Android Studio Panda 2 中复制入口无法加载的问题。</li><li>兼容 Android Studio 2024.2（Build 242）及更高版本。</li></ul>"
+        changeNotes = "<ul><li>移除“要做什么:”提示，并在复制内容末尾追加两个换行，方便继续输入需求。</li><li>复制时同时提供 Markdown 和 HTML 富文本，支持在 Codex 中粘贴文件链接和带语言高亮的代码块。</li><li>保留文件、行号、符号上下文及代码原有的空格和换行。</li></ul>"
 
         ideaVersion {
             sinceBuild = "242"
